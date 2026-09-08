@@ -1,0 +1,12 @@
+{
+    "builds": [{
+        "src": "ecommerce_project/wsgi.py",
+        "use": "@vercel/python"
+    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "ecommerce_project/wsgi.py"
+        }
+    ]
+}
